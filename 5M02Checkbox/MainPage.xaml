@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5M02Checkbox.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <CheckBox
+                            CheckedChanged="chkUnderlineChecked"
+                            x:Name="chkUnderline"
+                            />
+                        <Label
+                            Text="podkreślenie"
+                            />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <CheckBox
+                            CheckedChanged="chkBoldChecked"
+                            x:Name="chkBold"
+                            />
+                        <Label
+                            Text="pogrubienie"
+                            />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <CheckBox
+                            CheckedChanged="chkItalicChecked"
+                            x:Name="chkItalic"
+                            />
+                        <Label
+                            Text="pokrzywienie"
+                            />
+                    </HorizontalStackLayout>                    
+                </VerticalStackLayout>
+                <Label
+                    Text="napis próbny"
+                    FontSize="40"
+                    x:Name="lblNapis"
+                    />
+
+
+            </HorizontalStackLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
